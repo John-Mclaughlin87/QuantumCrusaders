@@ -1,0 +1,2 @@
+include ':app', ':irc-lib'
+rootProject.name='Quantum Crusaders'

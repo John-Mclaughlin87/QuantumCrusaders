@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/navigation_chat"
+            android:icon="@drawable/ic_action_send"
+            android:title="@string/title_system" />
+
+        <item
+            android:id="@+id/navigation_chat_organization"
+            android:icon="@drawable/ic_action_send"
+            android:title="@string/title_organization" />
+
+        <item
+            android:id="@+id/navigation_chat_freelancers"
+            android:icon="@drawable/ic_action_send"
+            android:title="@string/title_freelance" />
+
+        <item
+            android:id="@+id/navigation_chat_contacts"
+            android:icon="@drawable/ic_action_send"
+            android:title="@string/title_contacts" />
+
+</menu>

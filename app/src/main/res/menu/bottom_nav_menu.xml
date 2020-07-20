@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/navigation_hangar"
+            android:icon="@drawable/ic_action_send"
+            android:title="@string/title_hangar" />
+
+        <item
+            android:id="@+id/navigation_system"
+            android:icon="@drawable/ic_action_send"
+            android:title="@string/title_system" />
+        <item
+            android:id="@+id/navigation_organization"
+            android:icon="@drawable/ic_action_send"
+            android:title="Organize" />
+
+        <item
+            android:id="@+id/navigation_freelance"
+            android:icon="@drawable/ic_action_send"
+            android:title="Hire" />
+
+        <item
+            android:id="@+id/navigation_ordnance"
+            android:icon="@drawable/ic_action_send"
+            android:title="Items" />
+</menu>

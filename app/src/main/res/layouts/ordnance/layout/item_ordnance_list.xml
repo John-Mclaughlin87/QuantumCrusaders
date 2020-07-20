@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="0"
+        app:cardBackgroundColor="#808080">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="2dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ordnance_card"
+                android:layout_width="125dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ordnance_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_rocket_bomb" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/ordnance_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ordnance_Title"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_card"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ordnance_price_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ordnance_attack_boost_text"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_card"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_title" />
+
+            <TextView
+                android:id="@+id/ordnance_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25,000"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_price_text"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_title" />
+
+            <TextView
+                android:id="@+id/ordnance_quantity_owned_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity Owned:"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_card"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_defence_boost_text" />
+
+            <TextView
+                android:id="@+id/ordnance_attack_boost_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_attack_boost_text"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_price" />
+
+            <TextView
+                android:id="@+id/ordnance_attack_boost_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Attack Boost:"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ordnance_defence_boost_text"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_card"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_price_text" />
+
+            <TextView
+                android:id="@+id/ordnance_defence_boost_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Defence Boost:"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ordnance_quantity_owned_text"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_card"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_attack_boost_text" />
+
+            <TextView
+                android:id="@+id/ordnance_defence_boost_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_defence_boost_text"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_attack_boost_value" />
+
+            <TextView
+                android:id="@+id/ordnance_quantity_owned_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ordnance_quantity_owned_text"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_defence_boost_value" />
+
+            <Button
+                android:id="@+id/ordnance_purchase_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:insetTop="10dp"
+                android:insetBottom="10dp"
+                android:focusable="false"
+                android:text="Purchase"
+                android:textSize="12sp"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_quantity_owned_value"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/ordnance_purchase_quantity"
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:hint="QTY"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/ordnance_purchase_button"
+                app:layout_constraintEnd_toStartOf="@+id/ordnance_purchase_button"
+                app:layout_constraintTop_toBottomOf="@+id/ordnance_purchase_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

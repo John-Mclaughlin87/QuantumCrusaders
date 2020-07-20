@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@+id/navigation_system">
+
+    <fragment
+        android:id="@+id/navigation_hangar"
+        android:name="com.technomicron.qc.ui.hangar.Hangar_Fragment"
+        android:label="@string/title_hangar"
+        tools:layout="@layout/fragment_hangar" >
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_hangar_fleetyards"
+            app:destination="@id/navigation_hangar_fleetyards"
+            app:popUpTo="@+id/navigation_hangar_fleetyards" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_hangar_combat"
+            app:destination="@id/navigation_hangar_combat" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_hangar_contracts"
+            app:destination="@id/navigation_hangar_contracts" />
+        <action
+            android:id="@+id/action_navigation_hangar_to_navigation_alerts"
+            app:destination="@id/navigation_alerts" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hangar_fleetyards"
+        android:name="com.technomicron.qc.ui.hangar.fleetyard.Hangar_Fragment_Fleet"
+        android:label="Fleet Yards"
+        tools:layout="@layout/fragment_hangar_fleetyards" >
+        <action
+            android:id="@+id/action_navigation_hangar_fleetyards_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_hangar_fleetyards_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_hangar_fleetyards_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+        <action
+            android:id="@+id/action_navigation_hangar_fleetyards_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hangar_contracts"
+        android:name="com.technomicron.qc.ui.hangar.contracts.Contracts_Fragment"
+        android:label="Contracts"
+        tools:layout="@layout/fragment_hangar_contracts" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_alerts"
+        android:name="com.technomicron.qc.ui.hangar.alerts.Alerts_Fragment"
+        android:label="Alerts"
+        tools:layout="@layout/fragment_alerts" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hangar_combat"
+        android:name="com.technomicron.qc.ui.hangar.combat.Hangar_Fragment_Combat"
+        android:label="Fleet Yards"
+        tools:layout="@layout/fragment_hangar_combat" >
+        <action
+            android:id="@+id/action_navigation_hangar_combat_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_hangar_combat_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_hangar_combat_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+        <action
+            android:id="@+id/action_navigation_hangar_combat_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_system"
+        android:name="com.technomicron.qc.ui.system.System_Fragment"
+        android:label="@string/title_system"
+        tools:layout="@layout/fragment_system" >
+        <action
+            android:id="@+id/action_navigation_system_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_system_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_system_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_system_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_freelance"
+        android:name="com.technomicron.qc.ui.freelance.Freelance_Fragment"
+        android:label="@string/title_freelance"
+        tools:layout="@layout/fragment_freelance" >
+        <action
+            android:id="@+id/action_navigation_freelance_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_freelance_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_freelance_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_freelance_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+        <action
+            android:id="@+id/action_navigation_freelance_to_navigation_freelance_hire"
+            app:destination="@id/navigation_freelance_hire"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/navigation_freelance_hire" />
+        <action
+            android:id="@+id/action_navigation_freelance_self"
+            app:destination="@id/navigation_freelance" />
+        <action
+            android:id="@+id/action_navigation_freelance_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_freelance_hire"
+        android:name="com.technomicron.qc.ui.freelance.FreelanceHire_Fragment"
+        android:label="@string/title_freelance"
+        tools:layout="@layout/fragment_freelance_hire" >
+
+        <action
+            android:id="@+id/action_navigation_freelance_hire_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_freelance_hire_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+        <action
+            android:id="@+id/action_navigation_freelance_hire_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_freelance_hire_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_freelance_hire_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_organization"
+        android:name="com.technomicron.qc.ui.organization.Organization_Fragment"
+        android:label="@string/title_organization"
+        tools:layout="@layout/fragment_organization" >
+        <action
+            android:id="@+id/action_navigation_organization_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_organization_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_organization_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_organization_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_ordnance"
+        android:name="com.technomicron.qc.ui.ordnance.Ordnance_Fragment"
+        android:label="@string/title_ordnance"
+        tools:layout="@layout/fragment_ordnance" >
+        <action
+            android:id="@+id/action_navigation_ordnance_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_ordnance_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_ordnance_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_ordnance_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.technomicron.qc.ui.chat.fragment.Chat_Fragment_Main"
+        android:label="@string/title_chat"
+        tools:layout="@layout/chat_fragment_system" >
+        <action
+            android:id="@+id/action_navigation_chat_to_navigation_chat_organization2"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_chat_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_chat_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat_organization"
+        android:name="com.technomicron.qc.ui.chat.fragment.Chat_Fragment_Organization"
+        android:label="@string/title_organization"
+        tools:layout="@layout/chat_fragment_organization" >
+        <action
+            android:id="@+id/action_navigation_chat_organization_to_navigation_chat2"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_chat_organization_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+        <action
+            android:id="@+id/action_navigation_chat_organization_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat_freelancers"
+        android:name="com.technomicron.qc.ui.chat.fragment.Chat_Fragment_Freelancer"
+        android:label="@string/title_freelance"
+        tools:layout="@layout/chat_fragment_freelancer" >
+        <action
+            android:id="@+id/action_navigation_chat_freelancers_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_chat_freelancers_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_chat_freelancers_to_navigation_chat_contacts"
+            app:destination="@id/navigation_chat_contacts" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat_contacts"
+        android:name="com.technomicron.qc.ui.chat.fragment.Chat_Fragment_Contacts"
+        android:label="@string/title_contacts"
+        tools:layout="@layout/chat_fragment_contacts" >
+        <action
+            android:id="@+id/action_navigation_chat_contacts_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_chat_contacts_to_navigation_chat_organization"
+            app:destination="@id/navigation_chat_organization" />
+        <action
+            android:id="@+id/action_navigation_chat_contacts_to_navigation_chat_freelancers"
+            app:destination="@id/navigation_chat_freelancers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.technomicron.qc.ui.profile.Profile_Fragment"
+        android:label="@string/title_contacts"
+        tools:layout="@layout/fragment_profile" >
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quantum Crusaders</string>
+
+    <string name="title_hangar">Hangar</string>
+    <string name="title_system">System</string>
+    <string name="title_freelance">Freelance</string>
+    <string name="title_organization">Organization</string>
+    <string name="title_ordnance">Ordnance</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_contacts">Contacts</string>
+
+</resources>

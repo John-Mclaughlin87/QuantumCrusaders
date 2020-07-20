@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "298581546633",
+    "firebase_url": "https://quantum-crusaders.firebaseio.com",
+    "project_id": "quantum-crusaders",
+    "storage_bucket": "quantum-crusaders.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298581546633:android:ce17f98b4b55fc27315858",
+        "android_client_info": {
+          "package_name": "com.technomicron.qc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298581546633-jvnd4vpj4qemvm0i0790huid4ah8visn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVREDJYdBlkP3ruepuqbtQm8Kp6C4q7is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298581546633-jvnd4vpj4qemvm0i0790huid4ah8visn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
